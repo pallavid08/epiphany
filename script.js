@@ -7,8 +7,6 @@ const catPrrr = document.getElementById('cat-card-prrr');
 //Creating variables
 const imgCardSecond = document.getElementById('card-image-second');
 
-const nextBtn = document.getElementById('next-btn');
-
 //Functions for Event Listeners
 const handleClickHiss = () => {
    imgCard.src = './img/img_statement_4.png';
@@ -37,9 +35,3 @@ const handleImageChange = () => {
 catHiss.addEventListener('click', handleClickHiss);
 catMeow.addEventListener('click', handleClickMeow);
 catPrrr.addEventListener('click', handleClickPrrr);
-
-const clicked = () => {
-   console.log('clickkk');
-};
-
-nextBtn.addEventListener('click', clicked);
