@@ -38,8 +38,11 @@ body {
 .card-text-container {
    border: none;
    background-color: burlywood;
-   padding: 20px;
+   padding: 30px;
    border-radius: 10px 10px 0 0;
+}
+.card-text-container p {
+   font-size: larger;
 }
 .image-container {
    display: flex;
@@ -54,7 +57,8 @@ body {
    border-radius: 10px;
 }
 
-.cat-images-container {
+.cat-images-container,
+.stars-text-container {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -84,4 +88,39 @@ body {
    padding: 20px;
    border: 1px solid gray;
    border-radius: 5px;
+   background-color: burlywood;
+   font-weight: bold;
+   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.star {
+   width: 40px;
+   padding: 5px;
+}
+
+.stars a {
+   opacity: 50%;
+   cursor: pointer;
+}
+.stars:hover a {
+   opacity: 100%;
+}
+
+.stars a:hover {
+   opacity: 100%;
+}
+.stars a:hover ~ a {
+   opacity: 50%;
+}
+.text-for-stars {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+.stars-text-container {
+   flex-direction: column;
+   padding: 0 10px;
+}
+.stars-text-container p {
+   /* font-size: 10px; */
 }
