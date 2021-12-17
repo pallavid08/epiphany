@@ -5,47 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Epiphany Cards</title>
 </head>
 <body>
  
 <!-- Card With Cats and Stars-->
 <div class="card-button-wrapper">
-    <a href="second.html">
-        <button class="next-btn" id="next-btn" ><</button>
-    </a>
+    
+    <button class="next-btn" id="next-btn" onClick="window.location.href='second.html'"><</button>
+    
     <div class="card-container">
         <div class="card-text-container">
             <p>How do you feel about these quotes?</p>
         </div>
       <hr> 
 <div class="image-container">
-    <img class="card-image" id="card-image"src="./img/img_statement_1.png" alt=""/>
+    <img class="card-image" id="card-image-multi"src="./img/img_statement_1.png" alt=""/>
 </div>
 
-<div class="cat-images-container">
+
+<div id="multi-container">
+<div class="cat-images-container" id="cat-images-container-multi">
+    
     <div>
-        <div class="cat-card" id="cat-card-hiss">
+        <div class="cat-card animate__animated animate__slideInLeft animate__delay-3s" id="cat-card-hiss-multi">
             <img  class="cat-img"src="./img/img_cat_supersad.png" alt=""/>      
         </div>
         <p>Hiss</p>
     </div>
     <div>
-        <div class="cat-card" id="cat-card-meow">
+        <div class="cat-card animate__animated animate__slideInLeft animate__delay-2s" id="cat-card-meow-multi">
             <img class="cat-img" src="./img/img_cat_neutral.png" alt=""/>        
         </div>
         <p>Meow</p>
     </div>
     <div>
-        <div class="cat-card" id="cat-card-prrr">
+        <div class="cat-card animate__animated animate__slideInLeft animate__delay-1s" id="cat-card-prrr-multi">
             <img class="cat-img" src="./img/img_cat_happy.png" alt=""/>      
         </div>  
         <p>Prrr</p> 
     </div>  
    
 </div>
-<div class="stars-text-container">
-    <div class="stars" id="stars">
+<div class="stars-text-container" id="stars-text-container-multi">
+    <div class="stars animate__animated animate__slideInLeft animate__delay-4s" id="stars-multi">
 
         <a>  
         <img class="star" src="./img/favourite.png" alt="star"/>
@@ -67,17 +74,17 @@
   <p>Does Not Fit Well</p>
   <p>Fits Very Well</p>
  </div> 
-   
+</div> 
 </div>
 </div>
-<a href="index.html">
-    <button class="next-btn" id="next-btn" >></button>
-</a>
+
+<button class="next-btn" id="next-btn" onClick="window.location.href='index.html'">></button>
+
 
 </div>
 
 <!-- Script File -->
-<script src="script.js"></script>
+<script src="script3.js"></script>
 <script src="script2.js"></script>
 </body>
 </html>

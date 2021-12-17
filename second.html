@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Epiphany Cards</title>
 </head>
 <body>
 
 <!-- Card With Star Ratings -->
 <div class="card-button-wrapper">
-    <a href="index.html">
-        <button class="next-btn" id="next-btn" ><</button>
-    </a>
+  
+    <button class="next-btn" id="next-btn" onClick="window.location.href='index.html'"><</button>
+   
     <div class="card-container">
         <div class="card-text-container">
             <p>How do you feel about these quotes?</p>
@@ -25,9 +29,8 @@
 </div>
 
 
-<div class="stars-text-container" id="stars-text-container">
-    <div class="stars" id="stars">
-
+<div class="stars-text-container " id="stars-text-container">
+    <div class="stars animate__animated animate__slideInLeft animate__delay-1s" id="stars">
         <a>  
         <img class="star" src="./img/favourite.png" alt="star"/>
         </a>  
@@ -41,7 +44,7 @@
         <img class="star"  src="./img/favourite.png" alt="star"/>
        </a>
        <a>
-        <img class="star"src="./img/favourite.png" alt="star"/>
+        <img class="star " src="./img/favourite.png" alt="star"/>
        </a>    
     </div>
  <div class="text-for-stars">
@@ -52,9 +55,9 @@
 </div>
 </div>
 
-<a href="multiOption.html">
-    <button class="next-btn" id="next-btn" >></button>
-</a>
+
+<button class="next-btn" id="next-btn" onClick="window.location.href='multiOption.html'">></button>
+
 </div>
 
 <!-- Script File -->

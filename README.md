@@ -1,1 +1,3 @@
 # epiphany
+
+Browser: Chrome
